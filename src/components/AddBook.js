@@ -21,7 +21,7 @@ const AddBook = () => {
     };
 
     const sendRequest = async()=>{
-        await axios.post("http://localhost:5000/books",{
+        await axios.post("https://mern-crud1738.herokuapp.com/books",{
             name:String(inputs.name),
             author:String(inputs.author),
             description:String(inputs.description),
